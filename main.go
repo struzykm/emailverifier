@@ -35,7 +35,7 @@ func main() {
 	}
 
 	scan := bufio.NewScanner(os.Stdin)
-	pf("%sEnter a invalid e-mail or any tekst/char to end program\n", colorGreen)
+	pf("%sEnter a invalid e-mail or any text/char to end program\n", colorGreen)
 	pf("%sEnter e-mail :%s", colorRed, colorDarkYellow)
 	for scan.Scan() {
 		if email, err := isEmail(scan.Text()); err == nil {
